@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <meta charset="UTF-8">
+    <title>World Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header_inner">
+            <div class="logo_inner">
+                <img class="logo_inner_img" src="assets/images/logo.png">
+                <div class="logo_phone">
+                    <p class="logo_phone_title">8-800-100-5005</p>
+                    <p class="logo_phone_title">+7 (3452) 522-000</p>
+                </div>
+
+            </div>
+            <div class="menu">
+                <div class="menu_inner">
+                    <a href="" class="menu_item">Кредитные карты</a>
+                    <a href="" class="menu_item">Вклады</a>
+                    <a href="" class="menu_item">Дебетовая карта</a>
+                    <a href="" class="menu_item">Страхование</a>
+                    <a href="" class="menu_item">Друзья</a>
+                    <a href="" class="menu_item">Интернет-банк</a>
+                </div>
+                <button class="menu_button" id="menu_button" type="button">
+                    <span class="menu_button_item">Menu</span>
+                </button>
+            </div>
+
+        </header>
+        <div class="content">
+            <div class="bread_crumbs">
+                <a href="" class="bread_crumbs_item">Главная</a>
+                <p>-</p>
+                <a href="" class="bread_crumbs_item">Вклады</a>
+                <p>-</p>
+                <a href="" class="bread_crumbs_item">Калькулятор</a>
+            </div>
+            <div class="calculator">
+                <p class="calculator_title">Калькулятор</p>
+                <table class="calculator_table">
+                    <tr>
+                        <td>
+                            <p class="calculator_item_title">Дата оформления вклада</p>
+                        </td>
+                        <td>
+                            <input type="text" id="datepicker" class="calculator_item_input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="calculator_item_title">Сумма вклада</p>
+                        </td>
+                        <td class="td_block">
+                            <input type="number" class="calculator_item_input" value="1000" max="3000000" min="1000" id="input_sum">
+                        </td>
+                        <td class="td_block">
+                            <input class="calculator_item_range" type="range" min="1000" max="3000000" step="1000" value="1000" id="range_sum">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="calculator_item_title">Срок вклада</p>
+                        </td>
+                        <td>
+                            <select class="calculator_item_input calculator_item_select" id="calculator_item_select">
+                                <option>1 год</option>
+                                <option>2 года</option>
+                                <option>3 года</option>
+                                <option>4 года</option>
+                                <option>5 лет</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="calculator_item_title">Пополнение вклада</p>
+                        </td>
+                        <td>
+                            <div class="calculator_item_checkbox">
+                                <p><input name="dzen" checked="checked" type="radio" value="no" id="no">Нет</p>
+                                <p><input name="dzen" type="radio" value="yes" id="yes">Да</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="calculator_item_title">Сумма пополнения вклада</p>
+                        </td>
+                        <td class="td_block">
+                            <input type="number" class="calculator_item_input" value="1000" max="3000000" min="1000" id="input_replenishment">
+                        </td>
+                        <td class="td_block">
+                            <input class="calculator_item_range" type="range" min="1000" max="3000000" step="1000" value="1000" id="range_replenishment">
+                        </td>
+                    </tr>
+                </table>
+                <div class="error">
+                    <p class="error_title">Ошибка: Дата не введена!</p>
+                </div>
+                <div class="calculator_result">
+                    <button type="submit" class="calculator_result_button">Рассчитать</button>
+                    <p class="calculator_result_title">Результат: </p>
+                    <p class="calculator_result_sum"></p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer_inner">
+            <div class="footer_item">
+                <a href="" class="footer_item_text">Кредитные вклады</a>
+            </div>
+            <div class="footer_item">
+                <a href="" class="footer_item_text">Вклады</a>
+            </div>
+            <div class="footer_item">
+                <a href="" class="footer_item_text">Дебетовая карта</a>
+            </div>
+            <div class="footer_item">
+                <a href="" class="footer_item_text">Страхование</a>
+            </div>
+            <div class="footer_item">
+                <a href="" class="footer_item_text">Друзья</a>
+            </div>
+            <div class="footer_item">
+                <a href="" class="footer_item_text">Интернет-банк</a>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/scripts/script.js"></script>
+
+</body>
+</html>
