@@ -1,6 +1,6 @@
 $( function() {
     // Календарь
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
     $( "#datepicker" ).mask('99/99/9999');
 
     //Динамическое использование ползунка
